@@ -23,7 +23,7 @@
   appearance: none;
   -webkit-appearance: none;
   /* Font size must the 16px or larger to prevent iOS page zoom on focus */
-  font-size:16px;
+  font-size:1em;
   /* General select styles: change as needed */
   font-family: helvetica, sans-serif;
   font-weight: bold;
