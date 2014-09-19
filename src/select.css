@@ -7,19 +7,6 @@
   padding:0;
 }
 
-/* These are the "theme" styles for our button applied via separate button class, style as you like */
-.button {
-  border: 1px solid #bbb;
-  border-radius: .3em;
-  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-  background: #f3f3f3; /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
-  background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
-}
 
 /* This is the native select, we're making everything but the text invisible so we can see the button styles in the wrapper */
 .custom-select select {
