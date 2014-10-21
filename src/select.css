@@ -107,7 +107,7 @@ x:-o-prefocus, .custom-select::after {
   .custom-select select {
     width: 120%;
     width: -moz-calc(100% + 3em);
-    width: calc(100% + em);
+    width: calc(100% + 3em);
   }
   
 }
