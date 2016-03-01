@@ -51,17 +51,17 @@
 
 	/* Remove select styling */
 	.custom-select select {
+		padding-right: 2em; /* Match-01 */
 		/* inside @supports so that iOS <= 8 display the native arrow */
-		background: none;
+		background: none; /* Match-04 */
 		/* inside @supports so that Android <= 4.3 display the native arrow */
-		border: 1px solid transparent;
-		padding-right: 2em; /* Match-01 padding-right */
+		border: 1px solid transparent; /* Match-05 */
 
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		appearance: none;
 	}
 	.custom-select select:focus {
-		border-color: #aaa; /* Match-03 focus border-color */
+		border-color: #aaa; /* Match-03 */
 	}
 }

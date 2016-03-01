@@ -12,8 +12,9 @@
 	/* Make the native select extra wide so the arrow is clipped. 1.5em seems to be enough to safely clip it */
 	.custom-select select {
 		overflow: -moz-hidden-unscrollable;
-		border: none;
 		padding-right: .4em;
+		background: none; /* Match-04 */
+		border: 1px solid transparent; /* Match-05 */
 		/* Firefox < 4 */
 		min-width: 6em;
 		width: 130%;
@@ -48,16 +49,16 @@
 		display: none;
 	}
 	.custom-select select:focus {
-		border-color: #aaa; /* Match-03 focus border-color */
+		border-color: #aaa; /* Match-03 */
 	}
 	.custom-select select:focus::-ms-value {
 		background: transparent;
-		color: #222; /* Match-02 focus color */
+		color: #222; /* Match-02*/
 	}
 	.custom-select select {
-		background: none;
-		border: 1px solid transparent;
-		padding-right: 2em; /* Match-01 padding-right */
+		padding-right: 2em; /* Match-01 */
+		background: none; /* Match-04 */
+		border: 1px solid transparent; /* Match-05 */
 	}
 	.custom-select::after {
 		display: block;

@@ -52,7 +52,7 @@ label {
 .custom-select select:focus {
 	outline: none;
 	box-shadow: 0 0 1px 3px rgba(180,222,250, 1);
-	color: #222; /* Match-02 focus color */
+	color: #222; /* Match-02 */
 }
 
 /* Set options to normal weight */
