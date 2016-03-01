@@ -67,7 +67,7 @@ Most of the C-Grade support minimums are as comprehensive as Browserstack allows
 * Firefox 4 through 34
 * Internet Explorer 10 and 11
 
-### For Posterity:
+#### For Posterity:
 
 * [v9: February 26, 2016](http://output.jsbin.com/wurazow)
 * [v8: September 18, 2015](http://output.jsbin.com/yaruh)
