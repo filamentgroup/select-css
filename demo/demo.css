@@ -1,0 +1,61 @@
+/* Some basic page styles */
+body {
+	background-color: #fff;
+	font-family: sans-serif;
+	margin: 4% 10%;
+}
+
+/* Label styles: style as needed */
+label {
+	display:block;
+	margin-top:2em;
+	font-size: 0.9em;
+	color:#777;
+}
+
+/* These are the "theme" styles for our button applied via separate button class, style as you like */
+.button {
+	border: 1px solid #bbb;
+	border-radius: .3em;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	background: #f3f3f3; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+}
+.custom-select select {
+	/* General select styles: change as needed */
+	font-family: sans-serif;
+	font-weight: 700;
+	color: #444;
+	line-height:1.3;
+}
+.custom-select::after {
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 7px solid #666;
+	margin-top: -3px;
+}
+.custom-select {
+	border: 1px solid #bbb;
+}
+/* Hover style */
+.custom-select:hover {
+	border-color: #888;
+}
+/* Focus style */
+.custom-select select:focus {
+	outline: none;
+	box-shadow: 0 0 1px 3px rgba(180,222,250, 1);
+	color: #222; /* Match-02 focus color */
+}
+
+/* Set options to normal weight */
+.custom-select option {
+	font-weight:normal;
+}
