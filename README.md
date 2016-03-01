@@ -53,7 +53,7 @@ There are three different CSS-only grades used in this select plugin:
 
 Most of the C-Grade support minimums are as comprehensive as Browserstack allows.
 
-### Add in `select-css-compat.css` to change these browsers to B-Grade
+### Add `select-css-compat.css` to add B-Grade to:
 
 * Firefox 4 through 34
 * Internet Explorer 10 and 11
