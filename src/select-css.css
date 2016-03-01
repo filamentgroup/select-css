@@ -3,8 +3,6 @@
 .custom-select {
 	position: relative;
 	display: block;
-	margin-top: 0.5em;
-	padding: 0;
 }
 
 /* This is the native select, we're making everything but the text invisible so
