@@ -27,6 +27,7 @@ There are three different CSS-only grades used in this select plugin:
 1. *C-grade*: Uses the native select and not the custom arrow.
 
 Both *A-Grade* and *B-grade* visually look the same:
+
 ![A and B-Grade select-css](artifacts/a-grade.png)
 
 *C-Grade* appearance varies by operating system and web browser.
