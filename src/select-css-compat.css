@@ -55,6 +55,8 @@
 		color: #222; /* Match-02 focus color */
 	}
 	.custom-select select {
+		background: none;
+		border: 1px solid transparent;
 		padding-right: 2em; /* Match-01 padding-right */
 	}
 	.custom-select::after {
