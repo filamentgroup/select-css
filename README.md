@@ -1,7 +1,6 @@
 select-css
 ==========
 
-If you’re looking for the JS version of the select plugin, check out [`select`](https://github.com/filamentgroup/select).
 
 Cross-browser CSS for consistent select element styling.
 
@@ -12,6 +11,8 @@ Demo page: [http://filamentgroup.github.io/select-css/demo/](http://filamentgrou
 Download: [select-css.css](https://github.com/filamentgroup/select-css/blob/master/src/select-css.css) and [select-css-compat.css](https://github.com/filamentgroup/select-css/blob/master/src/select-css-compat.css)
 
 ---
+
+If you’re looking for the JS version of the select plugin, check out [`select`](https://github.com/filamentgroup/select).
 
 ## How it works
 
