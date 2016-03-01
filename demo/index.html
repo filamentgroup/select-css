@@ -3,48 +3,15 @@
 <head>
 	<title>Select styles with CSS only</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		/* Some basic page styles */
-		body {
-			background-color: #fff;
-			font-family: helvetica, sans-serif;
-			margin: 4% 10%
-		}
-
-		/* Label styles: style as needed */
-		label {
-			display:block;
-			margin-top:2em;
-			font-size: 0.9em;
-			color:#777;
-		}
-
-		/* These are just demo button-y styles, style as you like */
-		.button {
-			border: 1px solid #bbb;
-			border-radius: .3em;
-			box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-			background: #f3f3f3; /* Old browsers */
-			background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
-			background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
-		}
-	</style>
-	<link rel="stylesheet" href="../src/select.css">
+	<link rel="stylesheet" href="demo.css">
+	<link rel="stylesheet" href="../src/select-css.css">
+	<link rel="stylesheet" href="../src/select-css-compat.css">
 </head>
 <body>
 
-<h1>CSS-only custom-styled selects v8</h1>
+<h1>CSS-only custom-styled selects</h1>
 
-<h4><a href="https://twitter.com/toddmparker">Todd Parker</a> - <a href="http://www.filamentgroup.com">Filament Group Inc.</a></h4>
-
-<p><strong>Last updated Sept 18 at 3:30pm:</strong> This is still an experimental technique and are continuing to refine the targeting and styles for our last holdout, Firefox. Firefox still doesn't have a clean way to hide the native select's arrow so this latest version keeps it simple: on all versions of Firefox, we set the width to be wide enough to clip off the native arrow via the container. Luckily, <code>-moz-calc()</code> works back to FF4 so we can over-size the select by about 50px to make things looks great back to FF4. Once everything is settled, we will do a post on the Filament Group site. Stay tuned. </p>
-
-<p><Strong>How this works:</strong> This styles a native select consistently cross-platform with only minimal CSS. The native select is then styled so it is essentially invisible (no appearance, border, bg) leaving only the select's text visible. There is a wrapper around the select that has the majority of the button styles (gradient, shadow, border, etc.). We then add the custom arrow via a pseudo element to the right. </p>
-
+<h4><a href="http://www.filamentgroup.com">Filament Group Inc.</a></h4>
 
 <label>Native select</label>
 <select>
@@ -57,13 +24,13 @@
 
 
 <label class="wrapper">This label wraps the select
-<div class="button custom-select ff-hack">
+<div class="button custom-select">
 <select>
-  <option>Apples</option>
-  <option>Bananas</option>
-  <option>Grapes</option>
-  <option>Oranges</option>
-  <option>A very long option name to test wrapping</option>
+	<option>Apples</option>
+	<option>Bananas</option>
+	<option>Grapes</option>
+	<option>Oranges</option>
+	<option>A very long option name to test wrapping</option>
 </select>
 </div>
 </label>
@@ -71,111 +38,89 @@
 <label class="wrapper" for="states">This label is stacked above the select</label>
 <div class="button custom-select">
 <select id="states">
-  <option value="AL">Alabama</option>
-  <option value="AK">Alaska</option>
-  <option value="AZ">Arizona</option>
-  <option value="AR">Arkansas</option>
-  <option value="CA">California</option>
-  <option value="CO">Colorado</option>
-  <option value="CT">Connecticut</option>
-  <option value="DE">Delaware</option>
-  <option value="FL">Florida</option>
-  <option value="GA">Georgia</option>
-  <option value="HI">Hawaii</option>
-  <option value="ID">Idaho</option>
-  <option value="IL">Illinois</option>
-  <option value="IN">Indiana</option>
-  <option value="IA">Iowa</option>
-  <option value="KS">Kansas</option>
-  <option value="KY">Kentucky</option>
-  <option value="LA">Louisiana</option>
-  <option value="ME">Maine</option>
-  <option value="MD">Maryland</option>
-  <option value="MA">Massachusetts</option>
-  <option value="MI">Michigan</option>
-  <option value="MN">Minnesota</option>
-  <option value="MS">Mississippi</option>
-  <option value="MO">Missouri</option>
-  <option value="MT">Montana</option>
-  <option value="NE">Nebraska</option>
-  <option value="NV">Nevada</option>
-  <option value="NH">New Hampshire</option>
-  <option value="NJ">New Jersey</option>
-  <option value="NM">New Mexico</option>
-  <option value="NY">New York</option>
-  <option value="NC">North Carolina</option>
-  <option value="ND">North Dakota</option>
-  <option value="OH">Ohio</option>
-  <option value="OK">Oklahoma</option>
-  <option value="OR">Oregon</option>
-  <option value="PA">Pennsylvania</option>
-  <option value="RI">Rhode Island</option>
-  <option value="SC">South Carolina</option>
-  <option value="SD">South Dakota</option>
-  <option value="TN">Tennessee</option>
-  <option value="TX">Texas</option>
-  <option value="UT">Utah</option>
-  <option value="VT">Vermont</option>
-  <option value="VA">Virginia</option>
-  <option value="WA">Washington</option>
-  <option value="WV">West Virginia</option>
-  <option value="WI">Wisconsin</option>
-  <option value="WY">Wyoming</option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
 </select>
 </div>  
 
 <div style="width:50%; min-width:10em;">
 <label class="wrapper">In 50% wide container
 <div class="button custom-select">
-  <select>
-    <option>Apples</option>
-    <option>Bananas</option>
-    <option>Grapes</option>
-    <option>Oranges</option>
-    <option>A very long option name to test wrapping and visual collisions</option>
-  </select>
+	<select>
+		<option>Apples</option>
+		<option>Bananas</option>
+		<option>Grapes</option>
+		<option>Oranges</option>
+		<option>A very long option name to test wrapping and visual collisions</option>
+	</select>
 </div>
 </label>
 </div>
+
+
+<label class="wrapper">Display <div class="button custom-select" style="display: inline-block">
+	<select>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+	</select>
+</div> inline-block
+</label>
 
 <label>Text input: 
 	<input type="text" placeholder="I'm a placeholder">
 </label>
 
-
-<h2>Confirmed to work in the following browsers</h2>
-<p>This technique seems to be functional everywhere since we're still leaving the native select in place. Worst case, the native select styling and the custom arrow will both show up but in all popular platforms, this looks very good and consistent. One minor caveat: setting the select to 110% means the menu may open up a bit wider than expected in Firefox. <a href="http://postimg.org/image/g7i0o6mr1/">Visual Test results</a></p>
-
-<h3>Custom select styled consistently</h3>
-<ul>
-	<li>iOS 4/5/6/7/8 - looks good, iOS3 even works fine but isn't quite as pretty</li>
-	<li>Android 2.2/2.3 (Browser) - looks good</li>
-	<li>Android 4.0/4.1/4.2 (Browser) - looks good</li>
-	<li>Android 4.0/4.1/4.2/4.3/4.4 (Chrome) - looks good</li>
-	<li>WP8 - looks good</li>
-	<li>Kindle Fire 2/HD - looks good</li>
-	<li>IE 10/11 - looks good</li>
-	<li>Safari 5 - looks good</li>
-	<li>Chrome 22-35 - looks good</li>
-	<li>Opera 15-22 - looks good</li>
-</ul>
-
-<h3>Custom select with minor visual issues</h3>
-<ul>
-	<li>iOS3 even works fine but isn't quite as pretty</li>
-	<li>Firefox (all versions) - select menu when open is wider then it needs to be (by ~50px) to clip off the native arrow. Note that the select text can run under the arrow, no solution found for that.</li>
-	<li>Opera Mini - alignment of text and arrows is a bit off but it works</li>
-	<li>Opera Mobile - custom and native arrows both appear</li>
-	<li>Nokia Asha - Long options can break outside the box</li>
-</ul>
-
-<h3>Native select</h3>
-
-<ul>
-<li>WP 7.5-7.8 - native select</li>
-<li>IE 6/7/8/9 - native select</li>
-<li>Opera pre-14 - native select</li>
-</ul>
 
 </body>
 </html>
