@@ -22,9 +22,9 @@ This styles a native select consistently cross-platform with only minimal CSS. T
 
 There are three different CSS-only grades used in this select plugin:
 
-1. *A-grade*: Uses custom pseudo-element arrow and hides the native arrow using `appearance: none` (or a compatible vendor prefixed property).
-1. *B-grade*: Uses a custom pseudo-element arrow but hides the native arrow by making the native select wider than the container (usually using <code>calc()</code> to keep 100% width but add a fixed amount) and hiding the arrow using <code>overflow: hidden</code>.
-1. *C-grade*: Uses the native select and not the custom arrow.
+1. *A-grade*: Uses custom pseudo-element arrow and hides the native arrow using `appearance: none` (or a compatible vendor prefixed property). ![A-Grade select-css](artifacts/a-grade.png)
+1. *B-grade*: Uses a custom pseudo-element arrow but hides the native arrow by making the native select wider than the container (usually using <code>calc()</code> to keep 100% width but add a fixed amount) and hiding the arrow using <code>overflow: hidden</code>. ![B-Grade select-css](artifacts/b-grade.png)
+1. *C-grade*: Uses the native select and not the custom arrow. (Appearance varies by operating system and web browser)
 
 *Important*: The plugin should never show both the custom arrow and the native arrow at the same time. Any browser that renders both will be considered to be a visual bug and we’d love to have you file an issue on it.
 
