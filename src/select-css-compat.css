@@ -28,6 +28,9 @@
 
 	/* Firefox 35+ that supports hiding the native select can have a proper 100% width, no need for the overflow clip trick */
 	@supports ( mask-type: alpha ) {
+		.custom-select {
+			overflow: visible;
+		}
 		.custom-select select {
 			-moz-appearance: none;
 			width: 100%;
