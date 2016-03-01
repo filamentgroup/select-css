@@ -10,7 +10,7 @@ Demo page: [http://filamentgroup.github.io/select-css/demo/](http://filamentgrou
 
 Download: [select-css.css](https://github.com/filamentgroup/select-css/blob/master/src/select-css.css) and [select-css-compat.css](https://github.com/filamentgroup/select-css/blob/master/src/select-css-compat.css)
 
-Available on npm: `npm install fg-select-css`
+Available [on npm](https://www.npmjs.com/package/fg-select-css): `npm install fg-select-css`
 
 ---
 
