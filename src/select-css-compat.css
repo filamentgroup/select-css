@@ -18,8 +18,10 @@
 		min-width: 6em;
 		width: 130%;
 		/* Firefox 4-15 */
+		min-width: -moz-calc(0em);
 		width: -moz-calc(100% + 2.4em);
 		/* Firefox 16+ */
+		min-width: calc(0em);
 		width: calc(100% + 2.4em);
 	}
 
