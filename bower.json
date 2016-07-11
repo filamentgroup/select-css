@@ -1,0 +1,16 @@
+{
+  "name": "fg-select-css",
+  "version": "1.0.3",
+  "description": "Cross-browser CSS for consistent select element styling.",
+  "main": "src/select-css.css",
+  "authors": [
+    "zachleat <zachleatherman@gmail.com> (http://zachleat.com/)"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "package.json",
+    "README.md"
+  ]
+}
