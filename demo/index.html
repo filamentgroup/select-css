@@ -91,7 +91,7 @@
 	<option value="WI">Wisconsin</option>
 	<option value="WY">Wyoming</option>
 </select>
-</div>  
+</div>
 
 <div style="width:50%; min-width:10em;">
 <label class="wrapper">In 50% wide container
@@ -119,9 +119,32 @@
 </div> inline-block
 </label>
 
-<label>Text input: 
+<label>Text input:
 	<input type="text" placeholder="I'm a placeholder">
 </label>
+
+
+<div class="dark-wrapper">
+	<label>Test over a dark parent background
+	<div class="button custom-select">
+		<select>
+			<option>Apples</option>
+			<option>Bananas</option>
+			<option>Grapes</option>
+			<option>Oranges</option>
+			<option>A very long option name to test wrapping and visual collisions</option>
+		</select>
+	</div>
+	</label>
+	</div>
+</div>
+
+<p style="font-size: 0.8rem;">
+	Note: in Firefox, using gradients on the <code>&lt;select&gt;</code> background
+	without a solid fallback color can make the option list unreadable.
+	<a href="https://github.com/filamentgroup/select-css/pull/14">See pull request #14</a>
+	for details.
+</p>
 
 
 </body>

@@ -26,6 +26,12 @@ There are three different CSS-only grades used in this select plugin:
 1. *B-grade*: Uses a custom pseudo-element arrow but hides the native arrow by making the native select wider than the container (usually using <code>calc()</code> to keep 100% width but add a fixed amount) and hiding the arrow using <code>overflow: hidden</code>.
 1. *C-grade*: Uses the native select and not the custom arrow.
 
+Both *A-Grade* and *B-grade* visually look the same:
+
+![A and B-Grade select-css](artifacts/a-grade.png)
+
+*C-Grade* appearance varies by operating system and web browser.
+
 *Important*: The plugin should never show both the custom arrow and the native arrow at the same time. Any browser that renders both will be considered to be a visual bug and we’d love to have you file an issue on it.
 
 
@@ -61,7 +67,7 @@ Most of the C-Grade support minimums are as comprehensive as Browserstack allows
 * Firefox 4 through 34
 * Internet Explorer 10 and 11
 
-### For Posterity:
+#### For Posterity:
 
 * [v9: February 26, 2016](http://output.jsbin.com/wurazow)
 * [v8: September 18, 2015](http://output.jsbin.com/yaruh)
