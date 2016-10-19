@@ -70,7 +70,7 @@ label {
 	outline: none;
 	/* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
 	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-	box-shadow: 0 0 1px 3px -moz-mac-focusring;
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
 	color: #222; /* Match-02 */
 }
 
