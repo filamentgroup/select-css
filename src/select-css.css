@@ -36,12 +36,11 @@
 	display: none;
 }
 
-@supports ( -webkit-appearance: none ) or ( appearance: none )
-	/* Firefox <= 34 has a false positive on @supports( -moz-appearance: none )
-	 * @supports ( mask-type: alpha ) is Firefox 35+
-	 */
-	or ( ( -moz-appearance: none ) and ( mask-type: alpha ) ) {
-	
+/* Firefox <= 34 has a false positive on @supports( -moz-appearance: none )
+ * @supports ( mask-type: alpha ) is Firefox 35+
+ */
+@supports (-webkit-appearance: none) or (appearance: none) or ((-moz-appearance: none) and (mask-type: alpha)) {
+
 	/* Show custom arrow */
 	.custom-select::after {
 		display: block;
