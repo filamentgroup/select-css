@@ -16,6 +16,15 @@ Available [on npm](https://www.npmjs.com/package/fg-select-css): `npm install fg
 
 If you’re looking for the JS version of the select plugin, check out [`select`](https://github.com/filamentgroup/select).
 
+## Usage
+
+Include some or all of the following files, picking and choosing based on your project needs:
+
+* `select-css.css`: main component code (required)
+* `select-css-arrow.css`: adds a CSS triangle arrow to the wrapper element. Don’t include this file and style `.custom-select::after` yourself to customize your own arrow. Could use a background image bitmap, SVG, icon font content, etc.
+* `select-css-compat.css`: expanded B-Grade browser support (see more info below).
+* `select-css-theme.css`: include the Filament Group theme with custom focus styling.
+
 ## How it works
 
 This styles a native select consistently cross-platform with only minimal CSS. The native select is then styled so it is essentially invisible (no appearance, border, bg) leaving only the select's text visible. There is a wrapper around the select that has the majority of the button styles (gradient, shadow, border, etc.).
@@ -37,7 +46,7 @@ Both *A-Grade* and *B-grade* visually look the same:
 
 ## Browser Support
 
-### A-Grade using only `select-css.css`
+### A-Grade using `select-css.css`
 
 * MS Edge 12 and 13
 * Firefox 35 through 44
@@ -48,7 +57,7 @@ Both *A-Grade* and *B-grade* visually look the same:
 * iOS 9
 * Android 4.3 through 5.1
 
-### C-Grade using only `select-css.css`
+### C-Grade using `select-css.css`
 
 * Internet Explorer 6 through 11
 * Firefox 3.6 through 34

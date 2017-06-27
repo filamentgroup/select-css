@@ -1,0 +1,8 @@
+.custom-select::after {
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 7px solid #666;
+	margin-top: -3px;
+}
