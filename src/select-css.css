@@ -34,6 +34,9 @@
 	/* These hacks make the select behind the arrow clickable in some browsers */
 	pointer-events: none;
 	display: none;
+	border-left: 5px solid transparent;
+    	border-right: 5px solid transparent;
+    	border-top: 6px solid #666;
 }
 
 /* Firefox <= 34 has a false positive on @supports( -moz-appearance: none )
