@@ -30,3 +30,6 @@ label {
 	background: #fff -webkit-gradient(linear, left top, left bottom, from(#ffffff),to(#e5e5e5));
 	background: #fff linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
 }
+.custom-select {
+	margin-top: 0.5em;
+}
