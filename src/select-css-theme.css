@@ -1,15 +1,15 @@
 /* These are the "theme" styles for our button applied via separate button class, style as you like */
 /* Set the background fallback to solid #fff so Firefox renders the <option> list readably. */
-.custom-select-theme {
+.custom-select {
 	border: 1px solid #bbb;
 	border-radius: .3em;
 	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
 }
 
-.custom-select-theme {
+.custom-select {
 	margin-top: 0.5em;
 }
-.custom-select-theme select {
+.custom-select select {
 	/* General select styles: change as needed */
 	font-family: sans-serif;
 	font-weight: 700;
@@ -18,23 +18,23 @@
 	border-radius: .2em;
 }
 /* Hover style */
-.custom-select-theme:hover {
+.custom-select:hover {
 	border-color: #888;
 }
 /* Focus style */
-.custom-select-theme select:focus {
+.custom-select select:focus {
 	/* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
 	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
 	box-shadow: 0 0 0 3px -moz-mac-focusring;
 	color: #222; /* Match-02 */
 }
 @supports ( box-shadow: none ) {
-	.custom-select-theme select:focus {
+	.custom-select select:focus {
 		outline: none;
 	}
 }
 
 /* Set options to normal weight */
-.custom-select-theme option {
+.custom-select option {
 	font-weight:normal;
 }
