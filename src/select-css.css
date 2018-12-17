@@ -9,6 +9,7 @@
 	padding: .6em 1.4em .5em .8em;
 	text-wrap: wrap;
 	width: 100%;
+	max-width: 100%; /* useful when width is set to anything other than 100% */
 	box-sizing: border-box;
 	margin: 0;
 	border: 1px solid #aaa;
