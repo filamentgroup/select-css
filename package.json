@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/filamentgroup/select-css.git"
   },
-  "author": "zachleat <zachleatherman@gmail.com> (http://zachleat.com/)",
+  "authors": "zachleat <zachleatherman@gmail.com> (http://zachleat.com/), @scottjehl",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/filamentgroup/select-css/issues"
