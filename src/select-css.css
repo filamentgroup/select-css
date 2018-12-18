@@ -32,7 +32,7 @@
 	background-size: .65em auto, 100%;
 }
 /* Hover style */
-.custom-select:hover {
+.select-css:hover {
 	border-color: #888;
 }
 /* Focus style */
