@@ -1,6 +1,6 @@
 {
   "name": "fg-select-css",
-  "version": "2.0.3",
+  "version": "3.2.0",
   "description": "Cross-browser CSS for consistent select element styling.",
   "scripts": {
   },
@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/filamentgroup/select-css.git"
   },
-  "author": "zachleat <zachleatherman@gmail.com> (http://zachleat.com/)",
+  "authors": "zachleat <zachleatherman@gmail.com> (http://zachleat.com/), @scottjehl",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/filamentgroup/select-css/issues"
