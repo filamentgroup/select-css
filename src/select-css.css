@@ -66,6 +66,6 @@
 	  linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
 }
 
-.select-css:disabled:hover, .select-css[aria-disabled=true] {
+.select-css:disabled:hover, .select-css[aria-disabled=true]:hover {
 	border-color: #aaa;
 }
